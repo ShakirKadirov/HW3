@@ -7,5 +7,26 @@
 
 import Foundation
 
-print("Hello, World!")
+// Task #1
 
+func sorted(_ array:[Int]) ->[Int]{
+    guard array.count > 1 else {return array}
+
+    var result = array
+
+    for i in 0..<result.count{
+        for j in 0..<(result.count - 1 - i){
+            if result [j] > result[j + 1]{
+                let temp = result [j]
+                result[j] = result[j + 1]
+                result[j + 1] = temp
+            }
+        }
+    }
+    return result
+}
+
+
+let unsortedArray = [5, 2, 9, 1, 5, 6]
+let sortedArray = sorted(unsortedArray)
+print("Отсортированный массив: \(sortedArray)")
