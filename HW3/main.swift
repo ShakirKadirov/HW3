@@ -45,3 +45,11 @@ func isPalindrome(str: String) ->Bool{
 
 let chek = isPalindrome(str: "hamah")
 print(chek)
+
+
+// Task #3
+
+func sumArray(arr: [Int]) -> Int{
+    return arr.reduce(0, +)
+}
+print(sumArray(arr: [1,2,3,4]))
