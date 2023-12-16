@@ -30,3 +30,18 @@ func sorted(_ array:[Int]) ->[Int]{
 let unsortedArray = [5, 2, 9, 1, 5, 6]
 let sortedArray = sorted(unsortedArray)
 print("Отсортированный массив: \(sortedArray)")
+
+// Task #2
+
+func isPalindrome(str: String) ->Bool{
+    let formatting = str.lowercased().replacingOccurrences(of: " ", with: "")
+    
+    if  formatting == String(formatting.reversed()){
+        return true
+    }else{
+        return false
+    }
+}
+
+let chek = isPalindrome(str: "hamah")
+print(chek)
