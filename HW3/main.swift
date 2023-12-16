@@ -53,3 +53,12 @@ func sumArray(arr: [Int]) -> Int{
     return arr.reduce(0, +)
 }
 print(sumArray(arr: [1,2,3,4]))
+
+// Task #4
+
+func converted(celsius:Double) -> Double{
+    let fahrenheit = (celsius * 9.0/5.0) + 32.0
+    return fahrenheit
+}
+
+print(converted(celsius: 34.12))
